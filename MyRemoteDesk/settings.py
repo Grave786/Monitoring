@@ -80,6 +80,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'MyRemoteDesk.wsgi.application'
+CSRF_TRUSTED_ORIGINS = [
+    'https://employeemonitoring.onrender.com'
+]
 
 
 # Database
