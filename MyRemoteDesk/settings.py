@@ -100,14 +100,13 @@ WSGI_APPLICATION = 'MyRemoteDesk.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',     
-        'NAME': 'if0_39500537_employeetracker',              
-        'USER': 'if0_39500537',                   
-        'PASSWORD': 'wdEtvCZcJwSF2',              
-        'HOST': 'sql101.infinityfree.com',                      
-        'PORT': '3306',                            #
+        'NAME': 'sql12790774',              
+        'USER': 'sql12790774',                   
+        'PASSWORD': 'FY34TIzFAd',              
+        'HOST': 'sql12.freesqldatabase.com',                      
+        'PORT': '3306',                            
     }
 }
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
