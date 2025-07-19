@@ -99,17 +99,11 @@ WSGI_APPLICATION = 'MyRemoteDesk.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'freedb_employeetracker',
-        'USER': 'freedb_requinsolutions',
-        'PASSWORD': '*j6b4Eb@PWfav!j',
-        'HOST': 'sql.freedb.tech',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        }
+        'ENGINE': 'django.db.backends.sqlite3',  # TEMPORARY for testing
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 # DATABASES = {
 #     'default': {
