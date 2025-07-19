@@ -100,13 +100,23 @@ CSRF_TRUSTED_ORIGINS = [
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',  # TEMPORARY for testing
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',  # TEMPORARY for testing
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myremotedesk',
+        'USER': 'testing',
+        'PASSWORD': 'Testing@1234',
+        'HOST': '3.110.223.37',
+        'PORT': '3306',
     }
 }
-
 
 # DATABASES = {
 #     'default': {
