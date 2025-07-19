@@ -159,7 +159,7 @@ def org_register(request):
             request.session['tempO_address'] = o_address
             return HttpResponseRedirect('/VerifyEmail')
         else:
-            messages.error("Password not matched!")
+            messages.error(request, "Password not matched!") 
     else:
         return render(request, 'OrgRegister.html')
 
