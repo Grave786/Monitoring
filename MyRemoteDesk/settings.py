@@ -100,13 +100,17 @@ WSGI_APPLICATION = 'MyRemoteDesk.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'requin$default',  
-        'USER': 'requin',  
-        'PASSWORD': 'Vibhakar@844123',     
-        'HOST': 'requin.mysql.pythonanywhere-services.com',         
-        'PORT': '3306',                          
+        'NAME': 'freedb_employeetracker',
+        'USER': 'freedb_requinsolutions',
+        'PASSWORD': '*j6b4Eb@PWfav!j',
+        'HOST': 'sql.freedb.tech',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
